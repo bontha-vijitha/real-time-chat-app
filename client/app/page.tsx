@@ -4,8 +4,8 @@ import React, { useEffect, useState, useRef } from 'react';
 import io from 'socket.io-client';
 import { Pin, Trash2, Send, Clock, User, XCircle, Info } from 'lucide-react';
 
-const SOCKET_SERVER = process.env.NEXT_PUBLIC_SOCKET_SERVER || 'http://localhost:5000';
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+const SOCKET_SERVER = process.env.NEXT_PUBLIC_SOCKET_SERVER || 'https://real-time-chat-app-4pf1.onrender.com';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://real-time-chat-app-4pf1.onrender.com/api';
 
 export default function ChatApp() {
   const [messages, setMessages] = useState<any[]>([]);
